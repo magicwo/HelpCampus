@@ -1,0 +1,20 @@
+/**publish.wxss**/
+.button_small{
+  margin-top: 20px;
+
+}
+.description{
+  width: 700rpx;
+  margin-top: 20px;
+  height: 300rpx;
+}
+.address{
+   width: 700rpx;
+  margin-top: 20px;
+
+}
+.address_more{
+   width: 700rpx;
+  margin-top: 5px;
+  margin-bottom: 20px
+}

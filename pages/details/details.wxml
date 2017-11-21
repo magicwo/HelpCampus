@@ -1,0 +1,24 @@
+<view class="container">  
+  <scroll-view scroll-top="{{scrollTop}}" scroll-y="true" style="height:{{scrollHeight}}px;"  
+    class="list" bindscrolltolower="bindDownLoad" bindscroll="scroll" bindscrolltoupper="refresh">  
+    <view class="item" wx:for="{{list}}">
+      <view>
+      <image class="img" src="{{item.head_url}}"></image>
+  
+      <text class="title">{{item.wechat_id}}</text>
+      
+      </view>
+      <view class="text">  
+        <text class="name">{{item.nick_name}}</text>
+        <text class="content">{{item.content}}</text>  
+        <text class="address">地点：{{item.address}}</text>  
+         <text class="address">时间：{{item.clock}}</text>  
+      </view>  
+    </view>  
+  </scroll-view>  
+  <view class="body-view">  
+    <loading hidden="{{hidden}}" bindchange="loadingChange">  
+      加载中...  
+    </loading>  
+  </view>  
+</view>  

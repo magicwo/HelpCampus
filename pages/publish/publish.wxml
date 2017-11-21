@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+    
+<checkbox-group bindchange="checkboxChange">
+  <label class="checkbox" wx:for="{{items}}">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+  </label>
+</checkbox-group>
+<view class="description">
+  <textarea maxlength='200' placeholder="请准确描述您所需要的求助！"  auto-height auto-focus />
+</view>
+
+<view class='address' bindtap='selectLocation'>
+<text>地点：</text>
+<text placeholder="请点击选择地点！">{{address}}</text>
+</view>
+<view class='address_more'>
+<text>地点补充：</text>
+<textarea placeholder="可以补充更为详细的地址哦！"></textarea>
+</view>
+<view>
+<button  type="primary" class="publish" bindtap='bindButtonTap' size='mini'>发布请求</button> 
+  </view>
+</view>
